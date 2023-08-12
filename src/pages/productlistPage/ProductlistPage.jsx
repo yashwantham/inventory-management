@@ -1,10 +1,14 @@
 import { useContext } from "react";
+import { useNavigate } from "react-router-dom";
+
 import "./ProductlistPage.css";
 import { DataContext } from "../../contexts/DataProvider";
 import { ProductCard } from "./ProductCard";
 
 
 export const ProductlistPage = () => {
+
+    const navigate = useNavigate();
 
     const { dataState, dispatchData } = useContext(DataContext);
 
@@ -37,6 +41,10 @@ export const ProductlistPage = () => {
         displayList = displayList.sort((a, b) => a.stock - b.stock);
     }
 
+    if(dataState.lowStockItemsCheck) {
+        displayList = displayList.filter(({stock}) => stock <= 10)
+    }
+
     return (
         <>
         <div className="productlistpage-container">
@@ -62,7 +70,7 @@ export const ProductlistPage = () => {
                     <option value="stock">Stock</option>
                     </select>
                 </div>
-                <div className="newbtn-container">
+                <div className="newbtn-container" onClick={() => navigate("/addnewproduct")}>
                     New
                 </div>
             </div>

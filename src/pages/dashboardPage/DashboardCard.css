@@ -1,0 +1,19 @@
+.dashboard-card-container {
+    max-height: 4rem;
+    min-width: 8rem;
+    max-width: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F4F4F4;
+    color: #000000;
+    padding: 2.5rem 3rem;
+    margin: 2rem;
+    border-radius: 6px;
+}
+
+.numbercount {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+}

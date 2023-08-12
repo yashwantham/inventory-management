@@ -3,6 +3,11 @@
 }
 
 .dashboardpage-container {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 100%;
+}
+
+.dashboard-cards-list {
+    display: flex;
+    justify-content: space-around;
 }

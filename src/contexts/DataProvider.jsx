@@ -11,6 +11,10 @@ export const DataProvider = ({children}) => {
 
         switch(action.type) {
 
+            case "set_productList": {
+                return {...state, productList: action.payload}
+            }
+
             case "set_deptFilterOption": {
                 return {...state, deptFilterOption: action.payload}
             }
@@ -34,10 +38,6 @@ export const DataProvider = ({children}) => {
     const initialState = {productList: localStorage.getItem("productlist") ? JSON.parse(localStorage.getItem("productlist")) : inventoryData, deptFilterOption: "all-departments", lowStockItemsCheck: false, sortOrder: "name"};
 
     const [ dataState, dispatchData ] = useReducer(DataReducer, initialState);
-
-    useEffect(() => {
-        localStorage.setItem("productlist", JSON.stringify(inventoryData));
-    }, [])
 
     return (
         <>

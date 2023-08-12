@@ -1,3 +1,5 @@
+import "./DashboardCard.css"
+
 export const DashboardCard = ({number, text, color}) => {
     return (
         <>

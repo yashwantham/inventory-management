@@ -12,7 +12,8 @@ export const DashboardPage = () => {
 
     const totalDeliveredCount = dataState.productList.reduce((total, {delivered}) => total + delivered,0);
 
-    const lowStockItemsCount = dataState.productList.reduce((total, {quantity}) => quantity <= 10 ? total + 1 : total ,0);
+    const lowStockItemsCount = dataState.productList.reduce((total, {stock}) => stock <= 10 ? total + 1 : total ,0);
+    
 
     return (
         <>

@@ -1,0 +1,19 @@
+.departmentspage-container {
+    margin: 5rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dept-card {
+    max-height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4F4F4;
+    color: #000000;
+    font-weight: 700;
+    padding: 1.8rem 3rem;
+    margin: 2rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
