@@ -31,7 +31,7 @@ export const DataProvider = ({children}) => {
 
     }
 
-    const initialState = {productList: JSON.parse(localStorage.getItem("productlist")), deptFilterOption: "all-departments", lowStockItemsCheck: false, sortOrder: "name"};
+    const initialState = {productList: localStorage.getItem("productlist") ? JSON.parse(localStorage.getItem("productlist")) : inventoryData, deptFilterOption: "all-departments", lowStockItemsCheck: false, sortOrder: "name"};
 
     const [ dataState, dispatchData ] = useReducer(DataReducer, initialState);
 
