@@ -1,0 +1,14 @@
+.sidenav-container {
+    color: #fff;
+    background-color: #202124;
+    height: 100vh;
+    width: 17vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navigator {
+    margin: 2rem 0;
+}
