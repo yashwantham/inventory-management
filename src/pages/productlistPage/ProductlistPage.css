@@ -1,0 +1,58 @@
+.productlistpage-container {
+    padding: 2.5rem;
+    width: 100%;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newbtn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.4rem 0.8rem;
+    background-color: blue;
+    color: white;
+    /* border: 2px solid black; */
+    border-radius: 4px;
+}
+
+.productlist-container {
+    border: 1px solid gray;
+    
+}
+
+.columnheading-container {
+    display: flex;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid black;
+    background-color: #F0F0F0;
+}
+
+.columnheading-img {
+    margin-left: 1rem;
+}
+
+.columnheading-name {
+    margin-left: 11rem;
+}
+
+.columnheading-description {
+    margin-left: 10rem;
+} 
+
+.columnheading-price {
+    margin-left: 24rem;
+} 
+
+.columnheading-stock {
+    margin-left: 2rem;
+} 
+
+.columnheading-supplier {
+    margin-left: 2rem;
+} 
+
